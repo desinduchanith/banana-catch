@@ -1,0 +1,11 @@
+# Secrets and local settings
+.env
+
+# Personal docs and study guides (kept locally, never pushed)
+docs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
