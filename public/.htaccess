@@ -1,0 +1,6 @@
+# Always revalidate scripts and styles so players get the latest version after an update.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|html)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
