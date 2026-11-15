@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leaderboard · Banana Catch &amp; Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23ffd23f'/><path d='M8 21c6 4 14 1 16-9' fill='none' stroke='%232a1d00' stroke-width='3.5' stroke-linecap='round'/></svg>">
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <div class="page-head">
+      <div>
+        <h1>Leaderboard</h1>
+        <p>The jungle's top bananas. Beat the best run to claim the throne!</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Difficulty">
+        <button role="tab" data-level="easy" aria-selected="true">Easy</button>
+        <button role="tab" data-level="medium" aria-selected="false">Medium</button>
+        <button role="tab" data-level="hard" aria-selected="false">Hard</button>
+      </div>
+    </div>
+    <section id="board" role="tabpanel" aria-live="polite"><p class="empty">Loading…</p></section>
+  </main>
+  <script type="module" src="js/pages/leaderboard.js"></script>
+</body>
+</html>
